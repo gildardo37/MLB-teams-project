@@ -1,0 +1,24 @@
+
+.badgeContainer{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #ffffff;
+    border-radius: 7px;
+    margin: 15px;
+    padding: 20px;  
+    width: 400px;
+}
+
+.badgeContainer:hover {
+    transform: scale(1.07);
+}
+.playerPhoto{
+    margin: 15px;
+}
+.teamName{
+    height: 70px;
+}
+
+p {
+    font-size: 11pt;
+    margin-left: 5px;
+}

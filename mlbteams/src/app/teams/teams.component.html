@@ -1,0 +1,24 @@
+<H2 class="text-center">All Teams</H2>
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+        <div class="col-fluid badgeContainer text-center" *ngFor="let t of teams">    
+            <div>
+                <img src={{t.WikipediaLogoUrl}} class="teamLogo" alt={{t.Name}}>
+            </div>
+            <div class="teamName d-flex align-items-center justify-content-center">
+                <h4 >{{t.City}} {{t.Name}}</h4>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <p class="font-weight-bold">League</p>
+                <p>: {{t.League}}</p>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <p class="font-weight-bold">Division</p>
+                <p>: {{t.Division}}</p>
+            </div>
+            <div>
+                <button type="button" class="btn btn-info" (click)="redirectTeamPlayers(t.Key)">Show players</button>
+            </div>
+        </div>
+    </div>
+</div>
